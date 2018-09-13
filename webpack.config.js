@@ -30,7 +30,7 @@ module.exports = {
       },
     devServer: {
         contentBase: path.resolve(__dirname, 'public'),
-        historyApiFallback: true,
+        historyApiFallback: true, 
         publicPath: '/scripts/'
     },
     devtool: 'cheap-module-eval-source-map'
