@@ -7,6 +7,6 @@ const ExpenseListItem = ( {description, amount, createdAt }) => (
         <h3>{description}</h3>
         <p>{amount} - {createdAt}</p>
     </div>
-)
+);
 
 export default ExpenseListItem;
