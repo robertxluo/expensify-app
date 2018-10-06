@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseDashBoardPage correctly 1`] = `
+<div>
+  <Connect(ExpenseListFilters) />
+  <Connect(ExpenseList) />
+</div>
+`;
+
+exports[`should render HelpPage correctly 1`] = `
+<div>
+  This is from my help page component
+</div>
+`;
