@@ -14,7 +14,7 @@ module.exports = {
             use: {
               loader: 'babel-loader',
               options: {
-                presets: ['@babel/preset-env', "@babel/preset-react"],
+                presets: ['@babel/env', "@babel/preset-react"],
               }
             }
           }, 
@@ -35,3 +35,5 @@ module.exports = {
     },
     devtool: 'cheap-module-eval-source-map'
 }
+
+console.log(devtool)
