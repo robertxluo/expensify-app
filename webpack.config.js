@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractTextPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: './src/app.js',
@@ -6,6 +7,11 @@ module.exports = {
         path: path.resolve(__dirname, 'public/scripts'),
         filename: 'bundle.js'
     },
+    plugins: [
+      new MiniCssExtractTextPlugin({
+        filename: 'styles.css'
+      })
+    ],
     module: {
         rules: [
           {
@@ -21,11 +27,21 @@ module.exports = {
           {
             test: /\.s?css$/,
             use: [
-              'style-loader',
-              'css-loader',
-              'sass-loader'
+              MiniCssExtractTextPlugin.loader,
+              {
+                loader: 'css-loader',
+                options: {
+                  sourceMap: true
+                }
+              },
+              {
+                loader: 'sass-loader',
+                options: {
+                  sourceMap: true
+                }
+              }
             ]
-          }
+          },
         ]
       },
     devServer: {
