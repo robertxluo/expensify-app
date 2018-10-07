@@ -33,7 +33,5 @@ module.exports = {
         historyApiFallback: true, 
         publicPath: '/scripts/'
     },
-    devtool: 'cheap-module-eval-source-map'
+    devtool: 'source-map'
 }
-
-console.log(devtool)
