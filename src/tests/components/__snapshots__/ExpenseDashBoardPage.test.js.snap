@@ -6,9 +6,3 @@ exports[`should render ExpenseDashBoardPage correctly 1`] = `
   <Connect(ExpenseList) />
 </div>
 `;
-
-exports[`should render HelpPage correctly 1`] = `
-<div>
-  This is from my help page component
-</div>
-`;
