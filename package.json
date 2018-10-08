@@ -6,7 +6,6 @@
   "author": "Robert <robertxluo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public",
     "build": "webpack --mode=production",
     "dev-server": "webpack-dev-server --mode=development",
     "test": "jest --config=jest.config.json",
@@ -24,10 +23,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "css-loader": "^1.0.0",
     "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "enzyme-to-json": "^3.3.4",
     "express": "^4.16.3",
-    "jest": "^23.6.0",
     "mini-css-extract-plugin": "^0.4.3",
     "moment": "^2.22.2",
     "node-sass": "^4.9.3",
@@ -39,13 +35,18 @@
     "react-modal": "^3.6.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "react-test-renderer": "^16.5.2",
     "redux": "^4.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "uuid": "^3.3.2",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.5.2",
     "webpack-dev-server": "^3.1.9"
   }
 }
