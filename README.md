@@ -2,7 +2,7 @@
 
 ## Demo Link
 
- https://robert-expensify.herokuapp.com/
+https://expensify.robertluo.net/
 
 ## Tech Stuff
 
